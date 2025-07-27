@@ -1,0 +1,7 @@
+tunnel: e5289c4b-b67e-4fb4-aa11-626a3cf98591 # REPLACE with the actual ID from 'cloudflared tunnel create my-flask-tunnel'
+credentials-file: C:\Users\admin\.cloudflared\e5289c4b-b67e-4fb4-aa11-626a3cf98591.json # REPLACE with the actual ID
+
+ingress:
+  - hostname: flask.cheesyrecipe.com
+    service: http://localhost:5000
+  - service: http_status:404
