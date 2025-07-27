@@ -17,7 +17,7 @@ def webhook():
     title = data.get('title')
 
     MAKE_WEBHOOK_URL = 'https://hook.eu2.make.com/jb4961zu83d8bwvpxzs2ushd7ecg8ais'
-    SAVE_DIRECTORY = r"C:\Users\admin\PycharmProjects\Image\images"
+    SAVE_DIRECTORY = r""
 
     if not top_url or not bottom_url or not title:
         return jsonify({'error': 'Missing top_image_url, bottom_image_url, or title'}), 400
